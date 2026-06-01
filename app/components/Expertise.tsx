@@ -25,7 +25,7 @@ export function Expertise() {
 
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg hover:shadow-lg transition-all flex items-center gap-2 group">
-              <Mail size={20} />
+              {/* <Mail size={20} /> */}
               {t('cta_primary')}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>

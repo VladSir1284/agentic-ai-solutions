@@ -36,8 +36,8 @@ const translations = {
 
     hero_title: 'Корпоративні системи Agentic AI',
     hero_subtitle: 'Не просто чат-боти. Складні автономні системи корпоративного рівня з гарантованою безпекою та юридичною відповідністю',
-    cta_primary: 'Зв\'язатися з нами',
-    cta_secondary: 'Дізнатися більше',
+    cta_primary: 'Читати далі',
+    cta_secondary: 'Експертиза',
     pillar_security: 'Security',
     pillar_compliance: 'Compliance',
     pillar_auditability: 'Auditability',
@@ -94,8 +94,8 @@ const translations = {
 
     hero_title: 'Enterprise Agentic AI Systems',
     hero_subtitle: 'Not just chatbots. Complex autonomous enterprise-level systems with guaranteed security and legal compliance',
-    cta_primary: 'Contact Us',
-    cta_secondary: 'Learn More',
+    cta_primary: 'Read more',
+    cta_secondary: 'Еxpertise',
     pillar_security: 'Security',
     pillar_compliance: 'Compliance',
     pillar_auditability: 'Auditability',
