@@ -1,23 +1,24 @@
-'use client'
+"use client";
 
-import { useLanguage } from './LanguageContext';
-import { motion } from 'motion/react';
-import { PackageOpen, Scale, FileCheck, ShieldCheck } from 'lucide-react';
+import { useLanguage } from "./LanguageContext";
+import { motion } from "motion/react";
+import { PackageOpen, Scale } from "lucide-react";
 
 export function KPISection() {
   const { t } = useLanguage();
 
   const kpis = [
-    { icon: PackageOpen, label: t('kpi_1'), color: '#8b5cf6' },
-    { icon: Scale, label: t('kpi_2'), color: '#a78bfa' },
-    { icon: FileCheck, label: t('kpi_3'), color: '#c4b5fd' },
-    { icon: ShieldCheck, label: t('kpi_4'), color: '#8b5cf6' },
+    { icon: PackageOpen, label: t("kpi_1"), color: "#8b5cf6" },
+    { icon: Scale, label: t("kpi_2"), color: "#a78bfa" },
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-white to-purple-50/30">
+    <section className="pt-6 pb-20 px-6 bg-gradient-to-b from-white to-purple-50/30">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="text-center mb-16 font-semibold text-2xl">
+          <h2 className="mb-4">INTEGRATIONS / ECOSYSTEM</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {kpis.map((kpi, index) => {
             const Icon = kpi.icon;
             return (
@@ -35,9 +36,20 @@ export function KPISection() {
                 >
                   <Icon size={24} style={{ color: kpi.color }} />
                 </div>
-                <div className="text-base leading-snug" style={{ color: kpi.color }}>
+                <div
+                  className="text-base leading-snug"
+                  style={{ color: kpi.color }}
+                >
                   {kpi.label}
                 </div>
+                {index === 0 && (
+                  <div
+                    className="text-base leading-snug"
+                    style={{ color: kpi.color }}
+                  >
+                    {t("kpi_systems")}
+                  </div>
+                )}
               </motion.div>
             );
           })}

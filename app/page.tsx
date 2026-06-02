@@ -6,6 +6,7 @@ import { KPISection } from "./components/KPISection";
 import { InteractiveGraph } from "./components/InteractiveGraph";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
+import { Overview } from "./components/Overview";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           <Hero />
           <PositioningBlock />
           <InteractiveGraph />
+          <Overview />
           <Expertise />
           <KPISection />
         </main>

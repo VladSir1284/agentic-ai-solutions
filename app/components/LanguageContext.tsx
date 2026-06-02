@@ -31,7 +31,18 @@ const translations = {
     
     steps_title: 'Рішення / Як воно підходить',
 
+    overview_title_1: 'EvalRun ',
+    overview_title_2: 'Predictive Scaling',
+    overview_text_1: 'Шлюз оцінювання та випуску штучного інтелекту на базі Kubernetes для систем RAG та Agentic',
+    overview_text_2: 'Прогнозоване автомасштабування на основі машинного навчання для робочих навантажень Kubernetes',
+
     expertise_title: 'AI / Platform EXPERTISE',
+    expertise_li_1: 'Площини керування, нативні для Kubernetes та OpenShift',
+    expertise_li_2: 'Виробнича інженерія для систем RAG та Agentic AI',
+    expertise_li_3: 'Оцінювання, виявлення регресії та гейтування випуску',
+    expertise_li_4: 'Надійна та передбачувана поведінка системи штучного інтелекту',
+    expertise_li_5: 'Відстежуваність, можливість аудиту та операційна прозорість',
+    expertise_li_6: 'Автоматизація інфраструктури та прогнозне масштабування на основі машинного навчання',
     expertise_text: 'Акцент робиться на системах, які можна надійно розгортати, оцінювати, керувати та експлуатувати у виробництві.',
 
     hero_title: 'Корпоративні системи Agentic AI',
@@ -54,10 +65,11 @@ const translations = {
     reliability_title: 'Надійність',
     reliability_desc: 'Гарантована точність відповідей, відсутність галюцинацій, високий SLA',
     reliability_detail: 'SLA 99.9%. Точність відповідей 98%+. Жодних галюцинацій завдяки контрольованій архітектурі та перевірці фактів.',
-    kpi_1: 'Використання відкритих інструментів і бібліотек',
-    kpi_2: 'Проектування рішень з огляду на появу українського законодавства в сфері ШІ',
-    kpi_3: 'Відповідність EU AI Act',
-    kpi_4: 'Безпека ШІ рішень вища за швидкість - human-in-the-loop',
+    
+    kpi_1: 'Працює разом з існуючими системами доставки:',
+    kpi_2: 'Конвеєри збірки та розгортання залишаються незмінними. Там, де цього вимагають сучасні системи штучного інтелекту, впроваджується додатковий рівень перевірки та прийняття рішень з урахуванням штучного інтелекту.',
+    kpi_systems: 'GitHub Actions • GitLab CI • Jenkins • Argo Rollouts │ Tekton / OpenShift Pipelines • Kubernetes / OpenShift',
+    
     workflow_title: 'Чотири стовпи наших проектів',
     workflow_subtitle: '',
     features_title: 'Чому обирають нас',
@@ -89,7 +101,18 @@ const translations = {
 
     steps_title: 'Solution / How It Fits',
 
+    overview_title_1: 'EvalRun ',
+    overview_title_2: 'Predictive Scaling',
+    overview_text_1: 'Kubernetes-native AI evaluation and release gate for RAG and Agentic systems',
+    overview_text_2: 'ML-driven predictive autoscaling for Kubernetes workloads',
+
     expertise_title: 'AI / Platform Expertise',
+    expertise_li_1: 'Kubernetes and OpenShift-native control planes',
+    expertise_li_2: 'Production engineering for RAG and Agentic AI systems',
+    expertise_li_3: 'Evaluation, regression detection, and release gating',
+    expertise_li_4: 'Reliable and predictable AI system behavior',
+    expertise_li_5: 'Traceability, auditability, and operational clarity',
+    expertise_li_6: 'ML-driven infrastructure automation and predictive scaling',
     expertise_text: 'The emphasis is on systems that can be deployed, evaluated, governed, and operated reliably in production.',
 
     hero_title: 'Enterprise Agentic AI Systems',
@@ -112,10 +135,11 @@ const translations = {
     reliability_title: 'Reliability',
     reliability_desc: 'Guaranteed answer accuracy, no hallucinations, high SLA',
     reliability_detail: '99.9% SLA. 98%+ answer accuracy. Zero hallucinations through controlled architecture and fact verification.',
-    kpi_1: 'Using open-source tools and libraries',
-    kpi_2: 'Designing solutions with Ukrainian AI legislation in mind',
-    kpi_3: 'EU AI Act Compliance',
-    kpi_4: 'AI solution security over speed - human-in-the-loop',
+    
+    kpi_1: 'Works alongside existing delivery systems:',
+    kpi_2: 'Build and deployment pipelines remain unchanged. An additional AI-aware validation and decision layer is introduced where modern AI systems require it.',
+    kpi_systems: 'GitHub Actions • GitLab CI • Jenkins • Argo Rollouts │ Tekton / OpenShift Pipelines • Kubernetes / OpenShift',
+    
     workflow_title: 'Four Pillars of Our Projects',
     workflow_subtitle: '',
     features_title: 'Why Choose Us',
