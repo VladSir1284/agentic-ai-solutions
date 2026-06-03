@@ -4,7 +4,7 @@ import { useLanguage } from "./LanguageContext";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
-export function Expertise() {
+export function CTA() {
   const { t } = useLanguage();
 
   return (
@@ -15,7 +15,10 @@ export function Expertise() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          
+          <h1 className="mb-6 bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent font-semibold text-2xl">
+            {t("expertise_title")}
+          </h1>
+
           <ul className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             <li>{t("expertise_li_1")}</li>
             <li>{t("expertise_li_2")}</li>

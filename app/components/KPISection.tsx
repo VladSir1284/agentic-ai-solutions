@@ -15,9 +15,6 @@ export function KPISection() {
   return (
     <section className="pt-6 pb-20 px-6 bg-gradient-to-b from-white to-purple-50/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 font-semibold text-2xl">
-          <h2 className="mb-4">INTEGRATIONS / ECOSYSTEM</h2>
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {kpis.map((kpi, index) => {
             const Icon = kpi.icon;

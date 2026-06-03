@@ -65,10 +65,6 @@ export function InteractiveGraph() {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto py-20 px-4 bg-gradient-to-b from-white to-purple-50/30">
-      <div className="mb-6 text-center font-semibold text-2xl">
-        <h2>{t('steps_title')}</h2>
-      </div>
-
       {/* Graph Container */}
       <div className="relative" style={{ minHeight: '700px', width: '100%', maxWidth: '1152px', margin: '0 auto' }}>
         {/* SVG for all connections */}

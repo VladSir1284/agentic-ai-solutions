@@ -28,10 +28,6 @@ export function Hero() {
   return (
     <section className="pt-32 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 font-semibold text-2xl">
-          <h2 className="mb-4">HERO</h2>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;

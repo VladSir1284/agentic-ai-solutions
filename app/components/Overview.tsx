@@ -25,10 +25,6 @@ export function Overview() {
   return (
     <section className="pt-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 font-semibold text-2xl">
-          <h2 className="mb-4">Products Overview</h2>
-        </div>
-
         <div
           className="grid grid-cols-1 md:grid-cols-2 rounded-2xl border-2"
           style={{ backgroundColor: `${"#c4b5fd"}30` }}
