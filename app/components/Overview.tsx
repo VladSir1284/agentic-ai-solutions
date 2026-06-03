@@ -23,7 +23,7 @@ export function Overview() {
   ];
 
   return (
-    <section className="pt-20 px-6 bg-white">
+    <section className="px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div
           className="grid grid-cols-1 md:grid-cols-2 rounded-2xl border-2"

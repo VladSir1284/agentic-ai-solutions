@@ -31,10 +31,10 @@ export function Header() {
               {t("menu_strategy")}
             </a>
             <a
-              href="#about"
+              href="#contacts"
               className="text-foreground hover:text-purple-600 transition-colors"
             >
-              {t("menu_about")}
+              {t("contacts")}
             </a>
           </nav>
         </div>
