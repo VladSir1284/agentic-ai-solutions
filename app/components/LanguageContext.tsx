@@ -107,18 +107,12 @@ const translations = {
     kpi_systems:
       "GitHub Actions • GitLab CI • Jenkins • Argo Rollouts │ Tekton / OpenShift Pipelines • Kubernetes / OpenShift",
 
-    workflow_title: "Чотири стовпи наших проектів",
-    workflow_subtitle: "",
-    features_title: "Чому обирають нас",
-    feature_1_title: "Автономні агенти",
-    feature_1_desc:
-      "Складні системи Autonomous Agents, здатні виконувати багатоетапні завдання без втручання людини",
-    feature_2_title: "Agentic RAG",
-    feature_2_desc:
-      "Інтелектуальний пошук та обробка корпоративних даних з гарантованою точністю",
-    feature_3_title: "Корпоративний рівень",
-    feature_3_desc:
-      "Розроблено для великого бізнесу з урахуванням всіх вимог безпеки та масштабування",
+    cta_title: "Running RAG, Agentic AI, or dynamic workloads in Kubernetes?",
+    cta_text: "Discussion can start from one of three angles:",
+    cta_li_1: "AI evaluation and release gating",
+    cta_li_2: "predictive autoscaling",
+    cta_li_3: "production engineering for RAG / Agentic AI",
+
     footer_text: "© 2026 Agentic AI Solutions. Всі права захищено.",
   },
   en: {
@@ -214,18 +208,12 @@ const translations = {
     kpi_systems:
       "GitHub Actions • GitLab CI • Jenkins • Argo Rollouts │ Tekton / OpenShift Pipelines • Kubernetes / OpenShift",
 
-    workflow_title: "Four Pillars of Our Projects",
-    workflow_subtitle: "",
-    features_title: "Why Choose Us",
-    feature_1_title: "Autonomous Agents",
-    feature_1_desc:
-      "Complex Autonomous Agent systems capable of executing multi-step tasks without human intervention",
-    feature_2_title: "Agentic RAG",
-    feature_2_desc:
-      "Intelligent search and processing of corporate data with guaranteed accuracy",
-    feature_3_title: "Enterprise Grade",
-    feature_3_desc:
-      "Built for large businesses with all security and scalability requirements in mind",
+    cta_title: "Running RAG, Agentic AI, or dynamic workloads in Kubernetes?",
+    cta_text: "Discussion can start from one of three angles:",
+    cta_li_1: "AI evaluation and release gating",
+    cta_li_2: "predictive autoscaling",
+    cta_li_3: "production engineering for RAG / Agentic AI",
+
     footer_text: "© 2026 Agentic AI Solutions. All rights reserved.",
   },
 };

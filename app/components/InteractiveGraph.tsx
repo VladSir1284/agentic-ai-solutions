@@ -61,6 +61,13 @@ export function InteractiveGraph() {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto py-20 bg-gradient-to-b from-white to-purple-50/30">
+      <p className="graph-title">
+        Deployment is easy. Reliable operation is not.
+      </p>
+      <p className="graph-subtitle">
+        Current workflows can build and deploy AI systems, but often stop short
+        of a clear release decision.
+      </p>
       <div className="graph-items">
         {nodes.map((item, index) => {
           const Icon = item.icon;

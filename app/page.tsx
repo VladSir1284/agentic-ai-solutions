@@ -7,6 +7,7 @@ import { InteractiveGraph } from "./components/InteractiveGraph";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { Overview } from "./components/Overview";
+import { CTA } from "./components/CTA";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Overview />
           <Expertise />
           <KPISection />
+          <CTA />
         </main>
         <Footer />
       </div>

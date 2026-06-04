@@ -10,19 +10,16 @@ export function PositioningBlock() {
   const features = [
     {
       icon: Cpu,
-      // title: t('feature_1_title'),
       description: t("positioning_block_title_1"),
       color: "#8b5cf6",
     },
     {
       icon: Database,
-      // title: t('feature_2_title'),
       description: t("positioning_block_title_2"),
       color: "#a78bfa",
     },
     {
       icon: Building2,
-      // title: t('feature_3_title'),
       description: t("positioning_block_title_3"),
       color: "#c4b5fd",
     },
