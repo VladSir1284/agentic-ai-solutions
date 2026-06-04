@@ -41,15 +41,6 @@ export function Header() {
 
         <div className="flex items-center gap-2 bg-muted rounded-full p-1">
           <button
-            onClick={() => setLanguage("ua")}
-            className={`px-4 py-2 rounded-full transition-all flex items-center gap-2 cursor-pointer ${
-              language === "ua" ? "bg-white shadow-sm" : "hover:bg-white/50"
-            }`}
-          >
-            <Globe size={16} />
-            UA
-          </button>
-          <button
             onClick={() => setLanguage("en")}
             className={`px-4 py-2 rounded-full transition-all flex items-center gap-2 cursor-pointer ${
               language === "en" ? "bg-white shadow-sm" : "hover:bg-white/50"
@@ -57,6 +48,15 @@ export function Header() {
           >
             <Globe size={16} />
             EN
+          </button>
+          <button
+            onClick={() => setLanguage("ua")}
+            className={`px-4 py-2 rounded-full transition-all flex items-center gap-2 cursor-pointer ${
+              language === "ua" ? "bg-white shadow-sm" : "hover:bg-white/50"
+            }`}
+          >
+            <Globe size={16} />
+            UA
           </button>
         </div>
       </div>
