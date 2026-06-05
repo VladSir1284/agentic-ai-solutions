@@ -1,7 +1,6 @@
 "use client";
 
 import { useLanguage } from "./LanguageContext";
-import { motion } from "motion/react";
 import { Cpu, Database } from "lucide-react";
 
 export function Overview() {
@@ -32,12 +31,8 @@ export function Overview() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
                 className="p-8  hover:shadow-xl transition-all"
                 style={{ backgroundColor: `${feature.color}30` }}
               >
@@ -53,7 +48,7 @@ export function Overview() {
                 <p className="text-muted-foreground leading-relaxed m-0">
                   {feature.description}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
         </div>

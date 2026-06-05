@@ -8,6 +8,7 @@ import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { Overview } from "./components/Overview";
 import { CTA } from "./components/CTA";
+import { Main } from "./components/Main";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="min-h-screen bg-background">
         <Header />
         <main>
+          {/* <Main /> */}
           <Hero />
           <PositioningBlock />
           <InteractiveGraph />

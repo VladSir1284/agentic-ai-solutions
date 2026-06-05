@@ -1,7 +1,6 @@
 "use client";
 
 import { useLanguage } from "./LanguageContext";
-import { motion } from "motion/react";
 import { Cpu, Database, Building2 } from "lucide-react";
 
 export function Hero() {
@@ -32,12 +31,8 @@ export function Hero() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
                 className="p-8 rounded-2xl border-2 hover:shadow-xl transition-all"
                 style={{ borderColor: `${feature.color}30` }}
               >
@@ -50,7 +45,7 @@ export function Hero() {
                 <p className="text-muted-foreground leading-relaxed m-0">
                   {feature.description}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
         </div>

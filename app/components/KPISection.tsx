@@ -1,7 +1,6 @@
 "use client";
 
 import { useLanguage } from "./LanguageContext";
-import { motion } from "motion/react";
 import { PackageOpen, Scale } from "lucide-react";
 
 export function KPISection() {
@@ -19,12 +18,8 @@ export function KPISection() {
           {kpis.map((kpi, index) => {
             const Icon = kpi.icon;
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-2xl shadow-lg border border-purple-100 hover:shadow-xl transition-all"
               >
                 <div
@@ -47,7 +42,7 @@ export function KPISection() {
                     {t("kpi_systems")}
                   </div>
                 )}
-              </motion.div>
+              </div>
             );
           })}
         </div>

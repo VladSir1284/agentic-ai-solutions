@@ -2,7 +2,6 @@
 
 import { useLanguage } from "./LanguageContext";
 import { ArrowRight } from "lucide-react";
-import { motion } from "motion/react";
 
 export function Expertise() {
   const { t } = useLanguage();
@@ -10,11 +9,7 @@ export function Expertise() {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-purple-50/50 to-white">
       <div className="max-w-5xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           
           <ul className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             <li>{t("expertise_li_1")}</li>
@@ -42,7 +37,7 @@ export function Expertise() {
               {t("cta_secondary")}
             </button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

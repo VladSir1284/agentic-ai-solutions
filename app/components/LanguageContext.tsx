@@ -36,34 +36,6 @@ const translations = {
     positioning_block_li_4:
       "проактивне масштабування робочих навантажень замість запізнілої реакції",
 
-    steps_title: "Рішення / Як воно підходить",
-
-    overview_title_1: "EvalRun ",
-    overview_title_2: "Predictive Scaling",
-    overview_text_1:
-      "Шлюз оцінювання та випуску штучного інтелекту на базі Kubernetes для систем RAG та Agentic",
-    overview_text_2:
-      "Прогнозоване автомасштабування на основі машинного навчання для робочих навантажень Kubernetes",
-
-    expertise_title: "AI / Platform EXPERTISE",
-    expertise_li_1: "Площини керування, нативні для Kubernetes та OpenShift",
-    expertise_li_2: "Виробнича інженерія для систем RAG та Agentic AI",
-    expertise_li_3: "Оцінювання, виявлення регресії та гейтування випуску",
-    expertise_li_4:
-      "Надійна та передбачувана поведінка системи штучного інтелекту",
-    expertise_li_5:
-      "Відстежуваність, можливість аудиту та операційна прозорість",
-    expertise_li_6:
-      "Автоматизація інфраструктури та прогнозне масштабування на основі машинного навчання",
-    expertise_text:
-      "Акцент робиться на системах, які можна надійно розгортати, оцінювати, керувати та експлуатувати у виробництві.",
-
-    hero_title: "Корпоративні системи Agentic AI",
-    hero_subtitle:
-      "Не просто чат-боти. Складні автономні системи корпоративного рівня з гарантованою безпекою та юридичною відповідністю",
-    cta_primary: "Читати далі",
-    cta_secondary: "Експертиза",
-
     graph_title_1: "PR / Change",
     graph_title_2: "Build",
     graph_title_3: "Deploy",
@@ -76,30 +48,26 @@ const translations = {
     graph_description_4: "no clear decision layer",
     graph_description_5: "risk moves forward",
 
-    pillar_security: "Security",
-    pillar_compliance: "Compliance",
-    pillar_auditability: "Auditability",
-    pillar_reliability: "Reliability",
-    security_title: "Безпека",
-    security_desc:
-      "Приватне розгортання, захист даних, ізоляція від відкритих моделей",
-    security_detail:
-      "Повністю ізольоване середовище з контролем доступу на рівні підприємства. Ваші дані залишаються в межах вашої інфраструктури.",
-    compliance_title: "Відповідність",
-    compliance_desc:
-      "Юридична відповідність регуляціям EU AI Act та українського законодавства",
-    compliance_detail:
-      "100% відповідність EU AI Act. Готовність до майбутнього законодавства України. Повна документація для юридичних департаментів.",
-    auditability_title: "Аудит",
-    auditability_desc:
-      "Прозорість прийняття рішень ШІ, логування кожного кроку (Reasoning Path)",
-    auditability_detail:
-      "Кожне рішення системи повністю задокументоване. Повний шлях міркувань (Reasoning Path) доступний для перевірки в будь-який момент.",
-    reliability_title: "Надійність",
-    reliability_desc:
-      "Гарантована точність відповідей, відсутність галюцинацій, високий SLA",
-    reliability_detail:
-      "SLA 99.9%. Точність відповідей 98%+. Жодних галюцинацій завдяки контрольованій архітектурі та перевірці фактів.",
+    overview_title_1: "EvalRun ",
+    overview_title_2: "Predictive Scaling",
+    overview_text_1:
+      "Шлюз оцінювання та випуску штучного інтелекту на базі Kubernetes для систем RAG та Agentic",
+    overview_text_2:
+      "Прогнозоване автомасштабування на основі машинного навчання для робочих навантажень Kubernetes",
+
+    expertise_li_1: "Площини керування, нативні для Kubernetes та OpenShift",
+    expertise_li_2: "Виробнича інженерія для систем RAG та Agentic AI",
+    expertise_li_3: "Оцінювання, виявлення регресії та гейтування випуску",
+    expertise_li_4:
+      "Надійна та передбачувана поведінка системи штучного інтелекту",
+    expertise_li_5:
+      "Відстежуваність, можливість аудиту та операційна прозорість",
+    expertise_li_6:
+      "Автоматизація інфраструктури та прогнозне масштабування на основі машинного навчання",
+    expertise_text:
+      "Акцент робиться на системах, які можна надійно розгортати, оцінювати, керувати та експлуатувати у виробництві.",
+    cta_primary: "Читати далі",
+    cta_secondary: "Експертиза",
 
     kpi_1: "Працює разом з існуючими системами доставки:",
     kpi_2:
@@ -140,32 +108,6 @@ const translations = {
     positioning_block_li_4:
       "scaling workloads proactively instead of reacting too late",
 
-    steps_title: "Solution / How It Fits",
-
-    overview_title_1: "EvalRun ",
-    overview_title_2: "Predictive Scaling",
-    overview_text_1:
-      "Kubernetes-native AI evaluation and release gate for RAG and Agentic systems",
-    overview_text_2:
-      "ML-driven predictive autoscaling for Kubernetes workloads",
-
-    expertise_title: "AI / Platform Expertise",
-    expertise_li_1: "Kubernetes and OpenShift-native control planes",
-    expertise_li_2: "Production engineering for RAG and Agentic AI systems",
-    expertise_li_3: "Evaluation, regression detection, and release gating",
-    expertise_li_4: "Reliable and predictable AI system behavior",
-    expertise_li_5: "Traceability, auditability, and operational clarity",
-    expertise_li_6:
-      "ML-driven infrastructure automation and predictive scaling",
-    expertise_text:
-      "The emphasis is on systems that can be deployed, evaluated, governed, and operated reliably in production.",
-
-    hero_title: "Enterprise Agentic AI Systems",
-    hero_subtitle:
-      "Not just chatbots. Complex autonomous enterprise-level systems with guaranteed security and legal compliance",
-    cta_primary: "Read more",
-    cta_secondary: "Еxpertise",
-
     graph_title_1: "PR / Change",
     graph_title_2: "Build",
     graph_title_3: "Deploy",
@@ -178,29 +120,24 @@ const translations = {
     graph_description_4: "no clear decision layer",
     graph_description_5: "risk moves forward",
 
-    pillar_security: "Security",
-    pillar_compliance: "Compliance",
-    pillar_auditability: "Auditability",
-    pillar_reliability: "Reliability",
-    security_title: "Security",
-    security_desc:
-      "Private deployment, data protection, isolation from open models",
-    security_detail:
-      "Fully isolated environment with enterprise-grade access control. Your data stays within your infrastructure.",
-    compliance_title: "Compliance",
-    compliance_desc:
-      "Legal compliance with EU AI Act and Ukrainian regulations",
-    compliance_detail:
-      "100% EU AI Act compliance. Ready for future Ukrainian legislation. Complete documentation for legal departments.",
-    auditability_title: "Auditability",
-    auditability_desc:
-      "Transparent AI decision-making, logging every step (Reasoning Path)",
-    auditability_detail:
-      "Every system decision is fully documented. Complete Reasoning Path available for verification at any time.",
-    reliability_title: "Reliability",
-    reliability_desc: "Guaranteed answer accuracy, no hallucinations, high SLA",
-    reliability_detail:
-      "99.9% SLA. 98%+ answer accuracy. Zero hallucinations through controlled architecture and fact verification.",
+    overview_title_1: "EvalRun ",
+    overview_title_2: "Predictive Scaling",
+    overview_text_1:
+      "Kubernetes-native AI evaluation and release gate for RAG and Agentic systems",
+    overview_text_2:
+      "ML-driven predictive autoscaling for Kubernetes workloads",
+
+    expertise_li_1: "Kubernetes and OpenShift-native control planes",
+    expertise_li_2: "Production engineering for RAG and Agentic AI systems",
+    expertise_li_3: "Evaluation, regression detection, and release gating",
+    expertise_li_4: "Reliable and predictable AI system behavior",
+    expertise_li_5: "Traceability, auditability, and operational clarity",
+    expertise_li_6:
+      "ML-driven infrastructure automation and predictive scaling",
+    expertise_text:
+      "The emphasis is on systems that can be deployed, evaluated, governed, and operated reliably in production.",
+    cta_primary: "Read more",
+    cta_secondary: "Еxpertise",
 
     kpi_1: "Works alongside existing delivery systems:",
     kpi_2:

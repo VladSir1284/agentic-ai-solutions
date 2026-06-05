@@ -2,7 +2,6 @@
 
 import { useLanguage } from "./LanguageContext";
 import { ArrowRight } from "lucide-react";
-import { motion } from "motion/react";
 
 export function CTA() {
   const { t } = useLanguage();
@@ -10,11 +9,7 @@ export function CTA() {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-purple-50/50 to-white">
       <div className="max-w-5xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <h1 className="mb-6 bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent font-semibold text-2xl">
             {t("cta_title")}
           </h1>
@@ -42,7 +37,7 @@ export function CTA() {
               {t("cta_secondary")}
             </button>
           </div> */}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
