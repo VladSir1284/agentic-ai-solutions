@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { Overview } from "./components/Overview";
 import { CTA } from "./components/CTA";
 import { Main } from "./components/Main";
+import "./main_page.css";
 
 export default function Home() {
   return (
@@ -16,14 +17,16 @@ export default function Home() {
       <div className="min-h-screen bg-background">
         <Header />
         <main>
-          {/* <Main /> */}
-          <Hero />
-          <PositioningBlock />
-          <InteractiveGraph />
-          <Overview />
-          <Expertise />
-          <KPISection />
-          <CTA />
+          <div className="main-page-content">
+            {/* <Main /> */}
+            <Hero />
+            <PositioningBlock />
+          </div>
+            <InteractiveGraph />
+            <Overview />
+            <Expertise />
+            <KPISection />
+            <CTA />
         </main>
         <Footer />
       </div>

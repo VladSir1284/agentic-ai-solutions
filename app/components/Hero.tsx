@@ -25,7 +25,7 @@ export function Hero() {
   ];
 
   return (
-    <section className="pt-32 px-6 bg-white">
+    <section className="pt-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => {
@@ -33,7 +33,7 @@ export function Hero() {
             return (
               <div
                 key={index}
-                className="p-8 rounded-2xl border-2 hover:shadow-xl transition-all"
+                className="p-8 rounded-2xl border-2 hover:shadow-xl transition-all bg-white"
                 style={{ borderColor: `${feature.color}30` }}
               >
                 <div

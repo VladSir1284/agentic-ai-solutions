@@ -25,7 +25,7 @@ export function PositioningBlock() {
   ];
 
   return (
-    <section className="pt-20 px-6 bg-white">
+    <section className="pt-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => {
