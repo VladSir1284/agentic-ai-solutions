@@ -1,7 +1,6 @@
 "use client";
 
 import { useLanguage } from "./LanguageContext";
-import { ArrowRight } from "lucide-react";
 
 export function CTA() {
   const { t } = useLanguage();
@@ -24,19 +23,15 @@ export function CTA() {
             <li>- {t("cta_li_3")}</li>
           </ul>
 
-          {/* <div className="flex items-center justify-center gap-4 flex-wrap">
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg hover:shadow-lg transition-all flex items-center gap-2 group">
-              {t("cta_primary")}
-              <ArrowRight
-                size={20}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </button>
-
-            <button className="px-8 py-4 bg-white border-2 border-purple-200 text-purple-700 rounded-lg hover:border-purple-400 hover:shadow-md transition-all">
-              {t("cta_secondary")}
-            </button>
-          </div> */}
+          <button
+            className="cursor-pointer py-4 px-8 border-2 border-purple-200 rounded-md"
+            style={{ backgroundColor: "#ffffff" }}
+          >
+            <h2 style={{ color: "#8b5cf6" }} className="font-semibold">
+              {/* {t("hero_block_feature")} */}
+              Discuss a Use Case
+            </h2>
+          </button>
         </div>
       </div>
     </section>
