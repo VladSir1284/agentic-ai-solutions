@@ -112,6 +112,19 @@ export function InteractiveGraph() {
           );
         })}
       </div>
+      <ul className="graph-subtitle">
+        <li>CI/CD systems handle build and deployment.</li>
+        <li>Deployment systems handle rollout mechanics.</li>
+        <li>
+          EvalRun introduces AI-specific evaluation and release decisions before
+          promotion.
+        </li>
+      </ul>
+      <p className="graph-subtitle">
+        Predictive Scaling applies the same control-plane mindset to workload
+        behavior: forecast demand, then adapt capacity before reactive
+        thresholds are hit.
+      </p>
     </div>
   );
 }
