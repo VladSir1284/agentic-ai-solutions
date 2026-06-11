@@ -1,35 +1,24 @@
-import { LanguageProvider } from "./components/LanguageContext";
-import { Header } from "./components/Header";
 import { Expertise } from "./components/Expertise";
 import { PositioningBlock } from "./components/PositioningBlock";
 import { KPISection } from "./components/KPISection";
 import { InteractiveGraph } from "./components/InteractiveGraph";
 import { Hero } from "./components/Hero";
-import { Footer } from "./components/Footer";
 import { Overview } from "./components/Overview";
 import { CTA } from "./components/CTA";
-import { Main } from "./components/Main";
-import "./main_page.css";
+import "./assets/styles/main_page.css";
 
 export default function Home() {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main>
-          <div className="main-page-content">
-            {/* <Main /> */}
-            <Hero />
-            <PositioningBlock />
-          </div>
-            <InteractiveGraph />
-            <Overview />
-            <Expertise />
-            <KPISection />
-            <CTA />
-        </main>
-        <Footer />
+    <main>
+      <div className="main-page-content">
+        <Hero />
+        <PositioningBlock />
       </div>
-    </LanguageProvider>
+      <InteractiveGraph />
+      <Overview />
+      <Expertise />
+      <KPISection />
+      <CTA />
+    </main>
   );
 }

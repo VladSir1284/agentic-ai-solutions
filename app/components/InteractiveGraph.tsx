@@ -2,7 +2,7 @@
 
 import { useLanguage } from "./LanguageContext";
 import { ArrowRight, ArrowDown } from "lucide-react";
-import "./../graph.css";
+import "./../assets/styles/graph.css";
 
 interface Node {
   id: string;
