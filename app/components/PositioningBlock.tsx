@@ -15,11 +15,14 @@ export function PositioningBlock() {
     {
       icon: Database,
       description: t("positioning_block_title_2"),
+      description_2: t("positioning_block_description_2_1"),
       color: "#a78bfa",
     },
     {
       icon: Building2,
       description: t("positioning_block_title_3"),
+      description_2: t("positioning_block_description_3_1"),
+      description_3: t("positioning_block_description_3_2"),
       color: "#c4b5fd",
     },
   ];
@@ -42,19 +45,27 @@ export function PositioningBlock() {
                 >
                   <Icon size={28} style={{ color: feature.color }} />
                 </div>
-                {/* <h3 className="mb-4" style={{ color: feature.color }}>
-                  {feature.title}
-                </h3> */}
                 <p className="text-muted-foreground leading-relaxed m-0">
                   {feature.description}
                 </p>
+
+                <p className="text-muted-foreground leading-relaxed mt-2">
+                  {feature.description_2}
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed mt-2">
+                  {feature.description_3}
+                </p>
                 {index === 1 && (
-                  <ul className="mt-2">
-                    <li className="mt-1">- {t("positioning_block_li_1")}</li>
-                    <li className="mt-1">- {t("positioning_block_li_2")}</li>
-                    <li className="mt-1">- {t("positioning_block_li_3")}</li>
-                    <li className="mt-1">- {t("positioning_block_li_4")}</li>
-                  </ul>
+                  <>
+                    <p className="mt-2">Teams lack mechanisms to:</p>
+                    <ul>
+                      <li>- {t("positioning_block_li_1")}</li>
+                      <li className="mt-1">- {t("positioning_block_li_2")}</li>
+                      <li className="mt-1">- {t("positioning_block_li_3")}</li>
+                      <li className="mt-1">- {t("positioning_block_li_4")}</li>
+                    </ul>
+                  </>
                 )}
               </div>
             );

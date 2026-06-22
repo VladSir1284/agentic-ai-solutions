@@ -25,16 +25,28 @@ const translations = {
     hero_block_feature: "Дослідіть продукти",
 
     positioning_block_title_1:
-      "Системи RAG та Agentic AI все частіше розгортаються в середовищах Kubernetes.",
+      "RAG and Agentic AI systems are increasingly deployed into Kubernetes and cloud-native environments.",
+
     positioning_block_title_2:
-      "Складним залишається не саме розгортання, а підготовка цих систем до виробництва:",
+      "What remains difficult is not deployment itself, but making these systems production-ready.",
+
+    positioning_block_description_2_1:
+      "There is no clear way to decide whether a new AI version is safe to release.",
+
     positioning_block_title_3:
-      "Сучасні системи штучного інтелекту вимагають більше, ніж автоматизації розгортання. Вони потребують рівня операційного прийняття рішень.",
-    positioning_block_li_1: "перевірка безпечності випуску нової версії ШІ",
-    positioning_block_li_2: "запобігання тихим регресіям",
-    positioning_block_li_3: "підтримка поведінки надійною та зрозумілою",
+      "Instead, AI systems are promoted based on confidence, not on measurable and explainable evaluation.",
+
+    positioning_block_description_3_1:
+      "This creates a gap between deployment and decision: systems can be deployed, but not reliably approved.",
+
+    positioning_block_description_3_2:
+      "Modern AI systems require a dedicated decision layer before promotion to production.",
+
+    positioning_block_li_1: "validate behavior before promotion",
+    positioning_block_li_2: "detect regressions between versions",
+    positioning_block_li_3: "enforce consistent release criteria",
     positioning_block_li_4:
-      "проактивне масштабування робочих навантажень замість запізнілої реакції",
+      "explain why a system should or should not be deployed",
 
     graph_title_1: "PR / Change",
     graph_title_2: "Build",
@@ -96,17 +108,28 @@ const translations = {
     hero_block_feature: "Explore Products",
 
     positioning_block_title_1:
-      "RAG and Agentic AI systems are increasingly deployed into Kubernetes environments.",
+      "RAG and Agentic AI systems are increasingly deployed into Kubernetes and cloud-native environments.",
+
     positioning_block_title_2:
-      "What remains difficult is not deployment itself, but making these systems production-ready:",
+      "What remains difficult is not deployment itself, but making these systems production-ready.",
+
+    positioning_block_description_2_1:
+      "There is no clear way to decide whether a new AI version is safe to release.",
+
     positioning_block_title_3:
-      "Modern AI systems require more than deployment automation. They require an operational decision layer.",
-    positioning_block_li_1:
-      "validating whether a new AI version is safe to release",
-    positioning_block_li_2: "preventing silent regressions",
-    positioning_block_li_3: "keeping behavior reliable and explainable",
+      "Instead, AI systems are promoted based on confidence, not on measurable and explainable evaluation.",
+
+    positioning_block_description_3_1:
+      "This creates a gap between deployment and decision: systems can be deployed, but not reliably approved.",
+
+    positioning_block_description_3_2:
+      "Modern AI systems require a dedicated decision layer before promotion to production.",
+
+    positioning_block_li_1: "validate behavior before promotion",
+    positioning_block_li_2: "detect regressions between versions",
+    positioning_block_li_3: "enforce consistent release criteria",
     positioning_block_li_4:
-      "scaling workloads proactively instead of reacting too late",
+      "explain why a system should or should not be deployed",
 
     graph_title_1: "PR / Change",
     graph_title_2: "Build",
