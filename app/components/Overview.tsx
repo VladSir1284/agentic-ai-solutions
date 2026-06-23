@@ -22,18 +22,18 @@ export function Overview() {
   ];
 
   return (
-    <section className="px-6 bg-white">
+    <section className="px-6 py-10 bg-white">
       <div className="max-w-6xl mx-auto">
         <div
-          className="grid grid-cols-1 md:grid-cols-2 rounded-2xl border-2"
-          style={{ backgroundColor: `${"#c4b5fd"}30` }}
+          className="grid grid-cols-1 md:grid-cols-2 rounded-2xl"
+          style={{ gap: "12px" }}
         >
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={index}
-                className="p-8  hover:shadow-xl transition-all"
+                className="p-8  hover:shadow-xl transition-all rounded-2xl"
                 style={{ backgroundColor: `${feature.color}30` }}
               >
                 <div

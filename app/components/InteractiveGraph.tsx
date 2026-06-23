@@ -60,7 +60,7 @@ export function InteractiveGraph() {
   ];
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto py-20 bg-gradient-to-b from-white to-purple-50/30">
+    <div className="relative w-full max-w-6xl mx-auto py-10">
       <p className="graph-title">
         Deployment is easy. Reliable operation is not.
       </p>

@@ -1,5 +1,6 @@
 "use client";
 
+import { InteractiveGraph } from "./InteractiveGraph";
 import { useLanguage } from "./LanguageContext";
 import { Cpu, Database, Building2 } from "lucide-react";
 
@@ -30,15 +31,14 @@ export function PositioningBlock() {
   return (
     <section className="pt-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          className="grid grid-cols-1 md:grid-cols-1 gap-8 p-8 rounded-2xl border-2 hover:shadow-xl transition-all"
+          style={{ backgroundColor: `${"#a78bfa"}30` }}
+        >
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <div
-                key={index}
-                className="p-8 rounded-2xl border-2 hover:shadow-xl transition-all"
-                style={{ backgroundColor: `${feature.color}30` }}
-              >
+              <div key={index}>
                 <div
                   className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
                   style={{ backgroundColor: `${feature.color}20` }}
@@ -65,6 +65,7 @@ export function PositioningBlock() {
                       <li className="mt-1">- {t("positioning_block_li_3")}</li>
                       <li className="mt-1">- {t("positioning_block_li_4")}</li>
                     </ul>
+                    <InteractiveGraph />
                   </>
                 )}
               </div>
