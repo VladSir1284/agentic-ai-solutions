@@ -1,8 +1,8 @@
-import { Expertise } from "./components/Expertise";
-import { PositioningBlock } from "./components/PositioningBlock";
-import { KPISection } from "./components/KPISection";
 import { Hero } from "./components/Hero";
-import { Overview } from "./components/Overview";
+import { PositioningBlock } from "./components/PositioningBlock";
+import { Solution } from "./components/Solution";
+import { Expertise } from "./components/Expertise";
+import { KPISection } from "./components/KPISection";
 import { CTA } from "./components/CTA";
 import "./assets/styles/main_page.css";
 
@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <PositioningBlock />
       </div>
-      <Overview />
+      <Solution />
       <Expertise />
       <KPISection />
       <CTA />

@@ -60,12 +60,19 @@ const translations = {
     graph_description_4: "no clear decision layer",
     graph_description_5: "risk moves forward",
 
-    overview_title_1: "EvalRun ",
-    overview_title_2: "Predictive Scaling",
-    overview_text_1:
-      "Шлюз оцінювання та випуску штучного інтелекту на базі Kubernetes для систем RAG та Agentic",
-    overview_text_2:
-      "Прогнозоване автомасштабування на основі машинного навчання для робочих навантажень Kubernetes",
+    solution_title_1:
+      "EvalRun extends the Kubernetes API with Custom Resources for AI evaluation.",
+    solution_description_1_1:
+      "Instead of hiding evaluation logic inside CI scripts, the system models evaluation as declarative API objects.",
+
+    solution_title_2: "EvalDataset defines input data.",
+    solution_description_2_1:
+      "EvalSuite defines policy, thresholds, and regression rules.",
+    solution_description_2_2:
+      "EvalRun defines one concrete evaluation execution.",
+
+    solution_description_3_1:
+      "The operator watches EvalRun, starts the runner pod, and writes the final decision back into EvalRun.status.",  
 
     expertise_li_1: "Площини керування, нативні для Kubernetes та OpenShift",
     expertise_li_2: "Виробнича інженерія для систем RAG та Agentic AI",
@@ -143,12 +150,19 @@ const translations = {
     graph_description_4: "no clear decision layer",
     graph_description_5: "risk moves forward",
 
-    overview_title_1: "EvalRun ",
-    overview_title_2: "Predictive Scaling",
-    overview_text_1:
-      "Kubernetes-native AI evaluation and release gate for RAG and Agentic systems",
-    overview_text_2:
-      "ML-driven predictive autoscaling for Kubernetes workloads",
+    solution_title_1:
+      "EvalRun extends the Kubernetes API with Custom Resources for AI evaluation.",
+    solution_description_1_1:
+      "Instead of hiding evaluation logic inside CI scripts, the system models evaluation as declarative API objects",
+
+    solution_title_2: "EvalDataset defines input data.",
+    solution_description_2_1:
+      "EvalSuite defines policy, thresholds, and regression rules.",
+    solution_description_2_2:
+      "EvalRun defines one concrete evaluation execution. ",
+
+    solution_description_3_1:
+      "The operator watches EvalRun, starts the runner pod, and writes the final decision back into EvalRun.status.",    
 
     expertise_li_1: "Kubernetes and OpenShift-native control planes",
     expertise_li_2: "Production engineering for RAG and Agentic AI systems",

@@ -2,7 +2,7 @@
 
 import { InteractiveGraph } from "./InteractiveGraph";
 import { useLanguage } from "./LanguageContext";
-import { Cpu, Database, Building2 } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 export function PositioningBlock() {
   const { t } = useLanguage();
@@ -14,13 +14,13 @@ export function PositioningBlock() {
       color: "#8b5cf6",
     },
     {
-      icon: Database,
+      icon: Cpu,
       description: t("positioning_block_title_2"),
       description_2: t("positioning_block_description_2_1"),
       color: "#a78bfa",
     },
     {
-      icon: Building2,
+      icon: Cpu,
       description: t("positioning_block_title_3"),
       description_2: t("positioning_block_description_3_1"),
       description_3: t("positioning_block_description_3_2"),
