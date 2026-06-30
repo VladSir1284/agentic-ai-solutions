@@ -2,6 +2,7 @@
 
 import { useLanguage } from "./LanguageContext";
 import { Cpu, Database } from "lucide-react";
+import { SolutionGraph } from "./SolutionGraph";
 
 export function Solution() {
   const { t } = useLanguage();
@@ -60,6 +61,7 @@ export function Solution() {
               </div>
             );
           })}
+          <SolutionGraph />
         </div>
       </div>
     </section>

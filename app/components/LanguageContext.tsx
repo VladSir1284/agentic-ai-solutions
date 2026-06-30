@@ -70,9 +70,15 @@ const translations = {
       "EvalSuite defines policy, thresholds, and regression rules.",
     solution_description_2_2:
       "EvalRun defines one concrete evaluation execution.",
-
     solution_description_3_1:
-      "The operator watches EvalRun, starts the runner pod, and writes the final decision back into EvalRun.status.",  
+      "The operator watches EvalRun, starts the runner pod, and writes the final decision back into EvalRun.status.",
+    
+    sol_graph_title_1: "EvalDataset",
+    sol_graph_description_1: "input data",
+    sol_graph_title_2: "EvalSuite",
+    sol_graph_description_2: "policy",
+    sol_graph_title_3: "EvalRun",
+    sol_graph_description_3: "execution",
 
     expertise_li_1: "Площини керування, нативні для Kubernetes та OpenShift",
     expertise_li_2: "Виробнича інженерія для систем RAG та Agentic AI",
@@ -162,7 +168,14 @@ const translations = {
       "EvalRun defines one concrete evaluation execution. ",
 
     solution_description_3_1:
-      "The operator watches EvalRun, starts the runner pod, and writes the final decision back into EvalRun.status.",    
+      "The operator watches EvalRun, starts the runner pod, and writes the final decision back into EvalRun.status.",
+    
+    sol_graph_title_1: "EvalDataset",
+    sol_graph_description_1: "input data",
+    sol_graph_title_2: "EvalSuite",
+    sol_graph_description_2: "policy",
+    sol_graph_title_3: "EvalRun",
+    sol_graph_description_3: "execution",   
 
     expertise_li_1: "Kubernetes and OpenShift-native control planes",
     expertise_li_2: "Production engineering for RAG and Agentic AI systems",

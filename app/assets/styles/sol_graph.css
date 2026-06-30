@@ -1,0 +1,25 @@
+.sol-graph-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.sol-graph-item {
+  width: 200px;
+  height: 140px;
+  border: none;
+  border-radius: 24px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 5px 5px #64748b;
+}
+
+.sol-graph-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
