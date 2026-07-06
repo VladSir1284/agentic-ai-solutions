@@ -14,9 +14,9 @@ export default function Home() {
         <PositioningBlock />
       </div>
       <Solution />
-      <Expertise />
+      {/* <Expertise />
       <KPISection />
-      <CTA />
+      <CTA /> */}
     </main>
   );
 }

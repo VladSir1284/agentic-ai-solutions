@@ -1,17 +1,18 @@
 "use client";
 
 import { useLanguage } from "./LanguageContext";
-import { ArrowRight, ArrowDown, ArrowDownLeft, ArrowDownRight } from "lucide-react";
+import { Fragment } from "react";
 import "./../assets/styles/graph.css";
 import "./../assets/styles/sol_graph.css";
+import Xarrow from "react-xarrows";
 
 interface Node {
   id: string;
   title: string;
-  icon: typeof ArrowRight;
   description: string;
   color: string;
   border_color: string;
+  text: string;
 }
 
 export function SolutionGraph() {
@@ -19,69 +20,78 @@ export function SolutionGraph() {
 
   const nodes: Node[] = [
     {
-      id: "1",
+      id: "start_1",
       title: t("sol_graph_title_1"),
-      icon: ArrowRight,
       description: t("sol_graph_description_1"),
-      color: "#ffffff",
-      border_color: "#E2E8F0",
+      color: "#BFDBFE",
+      border_color: "#bfdbfe",
+      text: "<p>kind: EvalDataset</p> <p>metadata: name: dataset</p> <p>spec: source:'s3://server/buckets/'</p>",
     },
     {
-      id: "2",
+      id: "start_2",
       title: t("sol_graph_title_2"),
-      icon: ArrowRight,
       description: t("sol_graph_description_2"),
-      color: "#ffffff",
+      color: "#DDD6FE",
       border_color: "#E2E8F0",
+      text: "<p>kind: EvalSuite</p> <p>metadata:</br> name: suite</p> <p>spec: datasetRef: name: dataset</p> <p>metrics: generation.minFaithfulness: 0.80...</p>",
     },
     {
-      id: "3",
+      id: "start_3",
       title: t("sol_graph_title_3"),
-      icon: ArrowRight,
       description: t("sol_graph_description_3"),
-      color: "#ffffff",
+      color: "#FED7AA",
       border_color: "#E2E8F0",
+      text: "<p>kind: EvalDataset</p> <p>metadata:</br> name: dataset</p> <p>spec: source:'s3://server/buckets/'</p>",
     },
   ];
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto pb-2">
+    <div className="relative w-full max-w-6xl mx-auto mt-10 py-2">
       <div className="sol-graph-items">
-        {nodes.map((item, index) => {
-          //   const Icon = item.icon;
-          return (
-            <div className="graph-item-main" key={index}>
-              <div className="graph-item-wrapper">
-                <div
-                  className="sol-graph-item"
-                  style={{
-                    backgroundColor: `${item.color}`,
-                  }}
-                >
-                  <p className="item-title text-center">{item.title}</p>
-                  <p className="item-description text-center">
-                    {item.description}
-                  </p>
-                </div>
+        {nodes.map((item) => (
+          <Fragment key={item.id}>
+            <div
+              className="sol-graph-item"
+              id={item.id}
+              style={{
+                backgroundColor: item.color,
+              }}
+            >
+              <p className="item-title">{item.title}</p>
+              <p className="item-description">{item.description}</p>
+              <div className="sol-graph-item-code">
+                <code dangerouslySetInnerHTML={{ __html: item.text }} />
               </div>
-                {index === 1 && ( <ArrowDown size={44} color="#3e9392" />)}
             </div>
-          );
-        })}
+
+            <Xarrow start={item.id} end="second" color="grey" strokeWidth={2} />
+          </Fragment>
+        ))}
       </div>
-      <div className="sol-graph-items">
-        <ArrowDownRight size={44} color="#3e9392" />
-        <ArrowDownLeft size={44} color="#3e9392" />
+      <div className="flex items-center justify-center mt-12">
+        <div className="sol-graph-second" id="second">
+          <p className="item-title">Decision core</p>
+          <p className="item-description">
+            Turns scores into release decisions
+          </p>
+        </div>
       </div>
-      <div className="sol-graph-block">
-        <p className="graph-title">Operator</p>
-        <ArrowDown size={44} color="#3e9392"/>
+      <Xarrow start="second" end="third" color="grey" strokeWidth={2} />
+      <div className="flex items-center justify-center mt-12">
+        <div className="sol-graph-third" id="third">
+          <p className="item-title">Decision core</p>
+          <p className="item-description">
+            Turns scores into release decisions
+          </p>
+          <div className="sol-graph-item-code">
+            <code>
+              <p style={{ color: "#166534" }}>verdict: PASS | FAIL</p>
+              <p style={{ color: "#166534" }}>rootCause.stage: Policy</p>
+              <p style={{ color: "#166534" }}>artifacts.summaryUri: s3://..</p>
+            </code>
+          </div>
+        </div>
       </div>
-      <div className="sol-graph-block">
-        <p className="graph-title">Runner Pod</p>
-        <ArrowDown size={44} color="#3e9392"/>
-      </div>
-      <p className="graph-title w-full text-center">EvalRun.status</p>
     </div>
   );
 }
