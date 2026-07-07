@@ -1,9 +1,7 @@
 import { Hero } from "./components/Hero";
 import { PositioningBlock } from "./components/PositioningBlock";
 import { Solution } from "./components/Solution";
-import { Expertise } from "./components/Expertise";
-import { KPISection } from "./components/KPISection";
-import { CTA } from "./components/CTA";
+import { EvalBlock } from "./components/EvalBlock";
 import "./assets/styles/main_page.css";
 
 export default function Home() {
@@ -14,9 +12,7 @@ export default function Home() {
         <PositioningBlock />
       </div>
       <Solution />
-      {/* <Expertise />
-      <KPISection />
-      <CTA /> */}
+      <EvalBlock />
     </main>
   );
 }
