@@ -46,7 +46,7 @@ export function SolutionGraph() {
   ];
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto mt-10 py-2">
+    <div className="relative w-full max-w-6xl mx-auto mt-10 py-2 sol-graph-wrapper">
       <div className="sol-graph-items">
         {nodes.map((item) => (
           <Fragment key={item.id}>

@@ -64,3 +64,9 @@
   flex-direction: column;
   gap: 4px;
 }
+
+@media (max-width: 1023px) {
+  .sol-graph-wrapper {
+    display: none;
+  }
+}
